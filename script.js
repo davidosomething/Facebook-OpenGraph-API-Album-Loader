@@ -38,9 +38,10 @@
     },
 
     init : function() {
-      FB.api(getUrlVars().id, fbogaar.showAlbumInfo);
+      var albumId = getUrlVars().id || '10150106474643702';
+      FB.api(albumId, fbogaar.showAlbumInfo);
 
-      FB.api(getUrlVars().id + '/photos', function(response) {
+      FB.api(albumId + '/photos', function(response) {
         var firstPhoto = response.data[0],
             photos = response.data.length,
             html = '';
