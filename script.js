@@ -1,9 +1,9 @@
  FB.init({
-  appId  : '269349909751802',
+  appId  : 'YOUR-APP-ID-HERE',
   status : true, // check login status
   cookie : true, // enable cookies to allow the server to access the session
   xfbml  : true, // parse XFBML
-  channelURL : 'http://rimage.arn.com/testing/fbogaar/channel.html', // channel.html file
+  channelURL : 'http://YOUR-CHANNEL-FILE-URL/channel.html', // channel.html file
   oauth  : true // enable OAuth 2.0
 });
 
